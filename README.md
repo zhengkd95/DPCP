@@ -1,7 +1,7 @@
 # Dual Principal Component Pursuit
 Single subspace learning with some outliers:
 
-![single-subspace](https://user-images.githubusercontent.com/18388044/48882138-c33c3800-ee53-11e8-9e4a-e035b272729a.png)
+<img src="https://user-images.githubusercontent.com/18388044/48882138-c33c3800-ee53-11e8-9e4a-e035b272729a.png" width="50%" height="50%">
 
 This code may not be perfect, but I still hope it will help anyone in his/her research.
 
