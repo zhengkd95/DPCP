@@ -49,7 +49,7 @@ if c > 0
     idx0 = find(abs(X'*n) < 1e-3);
     
     if length(idx0) >= 0.3*size(X,2)
-        disp('possibly the gobal minimum.')
+        disp('possibly the global minimum.')
         B = [B, n];
     else
         disp('possibly a local minimum.')
