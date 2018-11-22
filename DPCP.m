@@ -36,6 +36,7 @@ if c > 0
     k = 0; dJ = 1e3; J = [];
     [~,S,V] = svd(X');
     n0 = V(:,end);
+    disp(' ')
     while (k<=max_iter && abs(dJ) > e)
         fprintf('Iter=%d, J=%g\n',k,norm(X'*n0,1))
         k = k+1;
@@ -56,16 +57,14 @@ if c > 0
         B = [];
     end
     X2 = X;
-    while (c>=2)
+    if (c>=2)
         [U,X2] = projection(X2,n);
         n = DPCP(X2(:,idx0),c-1,e,max_iter);
         if isempty(n)
             disp('terminate.')
-            break
         else 
             B = [B, U*n];
         end
-        c = c-1;
     end
     
 end
